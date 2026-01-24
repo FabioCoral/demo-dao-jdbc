@@ -17,6 +17,8 @@ public class ProgramDepartment {
             System.out.println(department);
         }
 
+        System.out.println("\n=== Find department by id ===");
+        System.out.println(departmentDao.findById(2));
 
 
         sc.close();
