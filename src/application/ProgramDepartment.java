@@ -20,6 +20,11 @@ public class ProgramDepartment {
         System.out.println("\n=== Find department by id ===");
         System.out.println(departmentDao.findById(2));
 
+        System.out.println("\n=== Insert department ===");
+        Department department = new Department(null, "RH");
+        departmentDao.insert(department);
+        System.out.println("Department inserted !");
+
 
         sc.close();
     }
