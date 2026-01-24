@@ -25,6 +25,10 @@ public class ProgramDepartment {
         departmentDao.insert(department);
         System.out.println("Department inserted !");
 
+        System.out.println("\n=== Insert department ===");
+        department.setName("HR");
+        departmentDao.update(department);
+        System.out.println("Department updated !");
 
         sc.close();
     }
